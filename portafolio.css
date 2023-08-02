@@ -1,0 +1,53 @@
+.fondo{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0.2;
+    background-image: url(./img/lago.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body{
+    text-align: center;
+    font-size: xx-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+    
+}
+h1{
+    margin-right: 12%;
+    margin-left: 4%;
+}
+img{
+    width: 2cm;
+    height: 3.4cm;
+    float: left;
+    max-width: 100%;
+    /* margin-left: 4%;  */
+}
+div h3{
+    margin: 20px;
+    width: 160px;
+    min-width: 80%;
+    margin-left: 10%;
+}
+.desc,.exp{
+    font-size: 20px;
+    color: darkblue;
+}
+#jap,#voxy{
+    color: blue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#ude{
+    color: blue;
+}
+table{
+    width: 100%;
+    min-width: 80%;
+
+}
+
