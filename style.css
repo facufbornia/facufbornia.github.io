@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    background-color: #0F2961;
+    margin: 0;
+    color: white;
+}
+html{
+    scroll-behavior: smooth;
+}
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+#menu{
+    position: sticky; /* nav se mueve al scrollear*/
+    top: 0; /* hasta llegar al final del header, siempre arriba*/
+    opacity: 0.8;     
+}
+#menu:hover{
+    opacity: 1;
+}
+
+nav ul{
+    display: flex; /* sería como "mostrar flexibles los elementos" lo debo usar en la
+                etiqueta general que contiene la etiq a aplicarle la propiedad*/
+    justify-content: flex-end; /*al display flex se le puede sumar align-items center*/
+    background-color: #678FE6;
+}
+
+li{
+    list-style: none; /* Saco las viñetas de las listas*/
+    margin-right: 20px;
+    background-color: #678FE6;
+    padding: 10px 10px 10px 0;
+}
+
+a{ 
+    text-decoration: none;
+    color: white;
+    background-color: #678FE6;
+}
+li a:hover{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#name{
+    text-align: center;
+    margin-top: 200px;
+    color: white;
+}
+
+h1{
+    font-size: 3.4em;
+    margin: 0; /* Todos los elementos traen un margen por defecto */
+}
+h2{
+    font-size: 2.8em;
+}
+h3{
+    font-size: 1.8em;
+}
+p{
+    font-size: 1.1em;
+}
+
+h4{
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+.conoceme{
+    padding: 10px 10px 10px 10px;
+}
+.conoceme:hover{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+header{
+    background-image: url(img/header.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+/* -----ABOUT ME--------*/
+section{
+    text-align: center;
+    margin-top: 20px;
+}
+.descripcion{
+    display: flex;
+    justify-content: space-around;
+}
+#sobremi{
+    margin-bottom: 20px;
+    font-size: 2.8em;
+}
+.descripcion img{
+    height: 400px;
+    padding: 20px;
+}
+.textme{
+    width: 40%;
+    margin-top: 40px;
+}
+.textme p{
+    margin-bottom: 10px;
+}
+
+/*  --------EDUCACIÓN-------- */
+#educacion{
+    margin: 40px 0 20px 0;
+    font-size: 2.8em;
+}
+.contenedor-edu{
+    display: flex;
+    flex-wrap: wrap;/* Determina el contenido del flex, cuantos elementos habran por fila*/
+}
+
+.contenedor-edu h3{
+    margin: 0 0 6px 0;
+}
+
+.js,.introd,.python{
+    width: 30%;
+    padding: 6px;
+    margin-left: 8px;
+}
+
+.jap,.webd,.ingles{
+    width: 30%;  /* El padding suma como width*/
+    padding: 6px;
+    margin-left: 8px;
+}
+
+.edu img{
+    height: 60px;
+    max-width: 120px; 
+    margin-top: 10px;
+    float: right;
+}
+.terminado{
+    margin-bottom: 20px;
+    border: #678FE6 solid;
+    border-radius: 10px;
+    background: #678FE6; /* Porque lo aplica solo a la imagen?*/
+}
+
+.terminado h3,.terminado p,.terminado img{
+    background: #678FE6;
+}
+
+.cursando{
+    margin-bottom: 20px;
+    border: #1f49a5 solid;
+    border-radius: 10px;
+    background: #1f49a5; /* Porque lo aplica solo a la imagen?*/
+}
+
+.cursando h3,.cursando p,.cursando img{
+    background: #1f49a5;
+}
+
+
+/* ------EXPERIENCIA------ */
+
+#experiencia img{
+    width: 15%;
+    height: 15%;
+    float: left;
+    justify-content: center;
+    text-align: center;
+    padding-left: 80px;
+    padding-top: 20px;
+}
+#jsimg{
+    margin-top: 20px;
+}
+#experiencia .container{
+    text-align: center;
+    padding: 20px 0;
+    height: 40vh;
+}
+
+/* ----- CONTACTO ------*/
+#contact img{
+    text-align: center;
+    height: 140px;
+    
+}
+#contact{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+/* Agregar evento para que agrande las imagenes  */
+/* Al hacer clic en el correo aparezca mi direccion email */
+/* Cuando achico la pagina quiero que js y phyton se separen juntos */
+/* Hacer que el header tambien tenga aplicado container */

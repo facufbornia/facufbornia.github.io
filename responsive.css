@@ -1,0 +1,6 @@
+@media (hover: hover){
+    .cursando:hover{
+        display: inline-block;
+        vertical-align: middle;
+        transform: perspective(28px) translateZ(0.4px);
+    }}

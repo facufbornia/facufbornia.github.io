@@ -1,51 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio HTML-CSS</title>
-    <link rel="stylesheet" href="portafolio.css">
-
+    <title>Facundo Fernández</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
 </head>
 <body>
-    <div class="fondo"> </div>
-    <h1><img src="./img/black panther.jpg">Facundo Fernández</h1>
-    
-    <div>
-        <h3>Breve descripción: </h3>
-        <p class="desc"> Estudiante avanzado de Veterinaria incursionando en el mundo del IT con conocimientos iniciales de Programación (Python, JS, HTML y CSS)</p>
-    </div>
-    <div>
-        <h3>Experiencia profesional: </h3>
-        <p class="exp"> Trabajo en una clínica veterinaria desde hace varios años, pero proximamente emprenderé camino rumbo al rubro del IT </p>
-    </div>
-    <div>
-        <h3>Educación IT: </h3>
-        <p>
-            <ol>
-                <li>Introducción a la Programación </li>
-                <li>Curso básico de Python</li>
-                <li>Curso básico de Javascript</li>
-                <li>
-                    <table>
-                        <tr>
-                            <th>Cursando:</th>
-                        </tr>
-                        <tr>
-                            <td id="jap">Desarrollo Web en JAP (Plan Ceibal)</td>
-                            <!-- <br> -->
-                        </tr>
-                        <tr>
-                            <td id="voxy">Inglés (Voxy)</td>
-                        </tr>
-                        <tr>
-                            <td id="ude">Introducción al Desarrollo web (Udemy)</td>
-                        </tr>
-                  </table>
-                </li>
-            </ol>
-        </p>
-    </div>
-    
+    <header class="container">
+        <div class="container">
+            <div id="menu">
+                <nav>
+                    <ul>
+                        <li><a href="#sobremi">Sobre mi</a></li>
+                        <li><a href="#educacion">Educación</a></li>
+                        <li><a href="#experiencia">Experiencias</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="name">
+                <h1>Facundo Fernández</h1>
+                <h4>Desarrollador Web trainee</h4>
+                <a class="conoceme" href="#sobremi"> CONOCEME </a>
+            </div>
+        </div>
+    </header>
+    <!-- Sobre mi -->
+    <section id="aboutme">
+        <div class="container">
+            <h2 id="sobremi"> Sobre mi </h2>
+            <div class="descripcion">
+                <div><img src="img/perfil.png" alt="Facundo Fernandez" title="Facundo Fernández Bornia"></div>
+                <div class="textme">
+                    <p>Soy un Desarrollador web en formación con sólida relación interpersonal, alta responsabilidad y determinación, lo que me permite enfocarme en cumplir las metas que me propongo y disfrutar el proceso. </p>
+                    <p> Poseo conocimientos en HTML, CSS, Python y JavaScript. </p>
+                    <p>Actualmente estoy en búsqueda de proyectos relacionados a la programación para sumar experiencia, fortalecer conocimientos e ir mejorando a través de mi compromiso con el aprendizaje continuo al mismo tiempo que aporto ideas nuevas al equipo.</p> 
+                    <p>Soy un apasionado de la tecnología y tengo un fuerte interés en explorar este mundo y las tendencias en el campo de IT.</p> <p>Estoy listo para contribuir y aprender de un entorno laboral dinámico y desafiante en el mundo de la programación.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Educación -->
+    <section>
+        <div class="container">
+            <h2 id="educacion">Educación IT</h2>
+            <div class="edu">
+                <div class="contenedor-edu">
+                    <div class="introd terminado">
+                        <h3>Introducción a la Programación</h3>
+                        <p>Primer curso con el cual incursione en este mundo de la programación.</p>
+                        <p>Con el uso de Typescript aprendí sobre Variables, funciones, booleanos, arreglos, y clases.</p>
+                        <img src="img/udemy.png" title="Udemy.com">
+                    </div>
+
+                    <div class="js terminado">
+                        <h3>Curso básico de JavaScript</h3>
+                        <p>Con este curso pude fortalecer los conocimientos que había aprendido con el curso de Introducción
+                            además de ahondar aún más en esos temas.</p>
+                        <p>Acá también aprendi sobre Métodos y Objetos.</p>   
+                        <img id="cody" src="img/cody.png" title="Codigofacilito">        
+                    </div>
+
+                    <div class="python terminado">
+                        <h3>Curso de Python</h3>
+                        <p>En este curso aprendí a usar el lenguaje de programación que más me ha gustado hasta el momento.</p>
+                        <p>Los temas dados fueron funciones, variables, arrays, booleanos, objetos, entre otros.</p>
+                        <img id="cody" src="img/cody.png" title="Codigofacilito">  
+                    </div>
+
+                    <div class="jap cursando">
+                        <h3>Desarrollo Web</h3>
+                        <p>Actualmente me encuentro cursando Desarrollo Web con el programa de Jóvenes a Programar de Ceibal.</p>
+                        <p>Aquí hemos visto DOM, CSS, HTML y JavaScript.</p>
+                        <img src="img/jap.png" title="Ceibal">
+                    </div>
+
+                    <div class="webd cursando">
+                        <h3>Front-End</h3>
+                        <p>Durante este curso estoy obteniendo un vistazo general del desarrollo web, se menciona sobre HTML, CSS, Javascript, Bootstrap, DOM, Jquery, Python.</p>
+                        <img src="img/udemy.png" title="Udemy.com">
+                    </div>
+
+                    <div class="ingles cursando">
+                        <h3>Inglés</h3>
+                        <p>Una herramienta muy importante en la cual estoy mejorando día a día.</p>
+                        <p>A día de hoy estoy aprendiendo mediante la plataforma Voxy.</p>
+                        <img src="img/Voxy.png" title="Voxy.com">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- EXPERIENCIA -->
+    <section id="experiencia">
+        <div class="container">
+            <h2> Lenguajes que manejo</h2>
+            <div><img src="img/css3.png" alt="css3" title="css3"></div>
+            <div><img src="img/html.png" alt="html" title="html5"></div>
+            <div><img id="jsimg" src="img/javascript.png" alt="javascript" title="javascript"></div>
+            <div><img src="img/python.png" alt="python" title="python"></div>
+        </div>
+    </section>
+    <!--  CONTACTO  -->
+    <section id="contact">
+        <div class="container">
+            <h2>Métodos de Contacto</h2>
+            <div>
+                <h4>Correo electrónico</h4>
+                <img src="img/gmail.png" title="gmail">
+            </div>
+            <div>
+                <h4>Linkedin</h4>
+                <img src="img/linkedin.png" title="linkedin">
+            </div>
+        </div>
+    </section>
+
 </body>
 </html>
