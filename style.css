@@ -27,6 +27,20 @@ nav ul{
                 etiqueta general que contiene la etiq a aplicarle la propiedad*/
     justify-content: flex-end; /*al display flex se le puede sumar align-items center*/
     background-color: #678FE6;
+    max-height: 45px;
+}
+.nav-img-uy{
+    width: 28px;
+    float: left;
+    padding: 12px 12px 12px 10%;
+    background-color: #678FE6;
+
+}
+.nav-img-us{
+    width: 30px;
+    float: left;
+    padding: 12px 12px 10px 0;
+    background-color: #678FE6;
 }
 
 li{
