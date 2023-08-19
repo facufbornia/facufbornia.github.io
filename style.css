@@ -86,6 +86,8 @@ h4{
 }
 .conoceme{
     padding: 10px 10px 10px 10px;
+    box-shadow: 2px 2px 6px rgb(2, 110, 233);
+    border-radius: 2em;
 }
 .conoceme:hover{
     font-size: 1.2em;
@@ -96,6 +98,9 @@ header{
     height: 100vh;
     background-size: cover;
     background-position: center center;
+}
+#eng-btn{
+    display: none;
 }
 
 
@@ -113,12 +118,16 @@ section{
     font-size: 2.8em;
 }
 .descripcion img{
-    height: 400px;
+    margin-top: 10%;
+    height: 40%;
     padding: 20px;
+    box-sizing: border-box;
 }
 .textme{
-    width: 40%;
+    width: 60%;
     margin-top: 40px;
+    padding-right: 14%;
+    box-sizing: border-box;
 }
 .textme p{
     margin-bottom: 10px;
@@ -132,6 +141,7 @@ section{
 .contenedor-edu{
     display: flex;
     flex-wrap: wrap;/* Determina el contenido del flex, cuantos elementos habran por fila*/
+    padding: 0 30px;
 }
 
 .contenedor-edu h3{
@@ -139,15 +149,17 @@ section{
 }
 
 .js,.introd,.python{
-    width: 30%;
+    width: 28%;
     padding: 6px;
-    margin-left: 8px;
+    margin-left: 12px;
+    box-shadow: 2px 2px 6px rgb(2, 110, 233);
 }
 
 .jap,.webd,.ingles{
-    width: 30%;  /* El padding suma como width*/
+    width: 28%;  /* El padding suma como width*/
     padding: 6px;
-    margin-left: 8px;
+    margin-left: 12px;
+    box-shadow: 2px 2px 8px rgba(48, 138, 241, 1);
 }
 
 .edu img{
@@ -200,16 +212,33 @@ section{
 }
 
 /* ----- CONTACTO ------*/
-#contact img{
+
+.cont img{
     text-align: center;
-    height: 140px;
-    
+    width: 6em;
+    height: auto;
+    cursor: pointer;
 }
-#contact{
-    display: flex;
-    flex-wrap: wrap;
+.cont{
+    padding: 5% 4%;
+    float: left;
 
 }
+div.un{
+    margin-left: 15%;
+}
+.cont a{
+    background-color: #0F2961;
+}
+#contact{
+    width: 100%;
+    display: inline;
+    
+}
+#MCresp{
+    display: none;
+}
+
 /* Agregar evento para que agrande las imagenes  */
 /* Al hacer clic en el correo aparezca mi direccion email */
 /* Cuando achico la pagina quiero que js y phyton se separen juntos */

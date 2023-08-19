@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Facundo Fernández</title>
     <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
     <link rel="stylesheet" href="responsive.css">
 </head>
 <body>
@@ -17,7 +18,7 @@
                 </div>
                 <nav>
                     <ul>
-                        <li><a href="#sobremi">Sobre mi</a></li>
+                        <li id="abtm"><a href="#sobremi">Sobre mi</a></li>
                         <li><a href="#educacion">Educación</a></li>
                         <li><a href="#experiencia">Experiencias</a></li>
                         <li><a href="#contact">Contacto</a></li>
@@ -28,6 +29,7 @@
                 <h1>Facundo Fernández</h1>
                 <h4>Desarrollador Web trainee</h4>
                 <a class="conoceme" href="#sobremi"> CONOCEME </a>
+                <a class="conoceme" id="eng-btn" href="english.html"> Know me</a>
             </div>
         </div>
     </header>
@@ -36,7 +38,7 @@
         <div class="container">
             <h2 id="sobremi"> Sobre mi </h2>
             <div class="descripcion">
-                <div><img src="img/perfil.png" alt="Facundo Fernandez" title="Facundo Fernández Bornia"></div>
+                <div class="div-me"><img src="img/perfil.png" alt="Facundo Fernandez" title="Facundo Fernández Bornia"></div>
                 <div class="textme">
                     <p>Soy un Desarrollador web en formación con sólida relación interpersonal, alta responsabilidad y determinación, lo que me permite enfocarme en cumplir las metas que me propongo y disfrutar el proceso. </p>
                     <p> Poseo conocimientos en HTML, CSS, Python y JavaScript. </p>
@@ -111,17 +113,21 @@
     <!--  CONTACTO  -->
     <section id="contact">
         <div class="container">
-            <h2>Métodos de Contacto</h2>
-            <div>
+            <h2 id="MC">Métodos de Contacto</h2>
+            <h2 id="MCresp">Contacto</h2>
+            <div class="cont un">
                 <h4>Correo electrónico</h4>
-                <img src="img/gmail.png" title="gmail">
+                <img onclick='alert("Puedes escribirme a: facufvet@gmail.com")' src="img/gmail.png" title="gmail">
             </div>
-            <div>
+            <div class="cont">
                 <h4>Linkedin</h4>
-                <img src="img/linkedin.png" title="linkedin">
+                <a href="https://www.linkedin.com/in/fernandezborniafacundo/" target="_blank"><img src="img/linkedin.png" title="linkedin"></a>
+            </div>
+            <div class="cont">
+                <h4>GitHub</h4>
+                <a href="https://github.com/facufbornia" target="_blank"><img src="img/github.png" title="git"></a>
             </div>
         </div>
     </section>
-
 </body>
 </html>

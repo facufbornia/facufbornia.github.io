@@ -4,3 +4,102 @@
         vertical-align: middle;
         transform: perspective(28px) translateZ(0.4px);
     }}
+
+@media screen and (max-width: 800px){
+    .body{
+        flex-direction: column;
+        place-content: center;
+        position: sticky;
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    #menu{
+        display: none;
+    }
+    .conoceme{
+        background-color: #678FE6;
+        box-shadow: 2px 2px 6px rgb(2, 110, 233);
+        border-radius: 2em;
+    }
+    #eng-btn{
+        margin: 20px 40%;
+        display: block;
+        background-color: #678FE6;
+        box-shadow: 2px 2px 6px rgb(2, 110, 233);
+        border-radius: 2em;
+    }
+/* -----ABOUT ME--------*/
+
+    .descripcion{
+        flex-direction: column;
+        text-align: center;
+    }
+ 
+    .descripcion img{
+        width: auto;
+        height: 400px;
+    }
+    
+    .textme{
+        margin: 0;
+        padding-left: 20%;
+        width: 100%;
+    }
+
+/*  --------EDUCACIÓN-------- */
+
+    .contenedor-edu{
+        width: 100%;
+        padding: 0 4px;
+    }
+    .js,.introd,.python,.jap,.webd,.ingles{
+        width: 100%;
+        padding: 0 4px;
+        margin-right: 4%;
+    }
+    
+/* ------EXPERIENCIA------ */    
+
+
+    #experiencia .container{
+        display: block;
+        height: 40vh;
+        width: 84vw;
+    }
+
+/* ----- CONTACTO ------*/
+    #contact{
+        height: 10vh;
+    }
+    a{
+        text-decoration: none;
+        background-color: #0F2961;
+    }
+    #contact .container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    #contact .container #MCresp{
+        justify-content: center;
+    }
+    #contact img{
+        width: 30%;
+        height: auto;
+        text-decoration: none;
+
+    }
+    div.un{
+        margin-left: 0;
+    }
+    #MCresp{
+        margin-top: 10%;
+        display: block;
+    }
+    #MC{
+        display: none;
+    }
+
+}
+
