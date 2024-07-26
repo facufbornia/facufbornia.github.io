@@ -6,8 +6,57 @@
     margin: 0;
     color: white;
 }
+                        /* Aviso de actualización */
+dialog{
+    position: fixed;
+    text-align: center;
+    top: 25%;
+    margin: 0 22%;
+    padding: 60px;
+    background-color: #fff;
+    border: solid #111 4px;
+    border-radius: 12px;
+    box-shadow: 10px 10px 20px 10px #111;
+    z-index: 2;
+}
+
+dialog h1, dialog p, dialog button, dialog a{
+    color: #000;
+    font-weight: bold;
+    background-color: #fff;
+}
+
+dialog button{
+    margin: 20px;
+    font-size: 20px;
+    background-color: #fff;
+    width: 120px;
+    height: 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px 2px #0008ff;
+}
+
+#background-dialog{
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.hide{
+    display: none;
+}
+
+                    /* Comienza Portfolio Vanilla */
 html{
     scroll-behavior: smooth;
+}
+body{
+    width: 80vw;
+    margin: 0 10%;
 }
 .container{
     max-width: 1400px;
