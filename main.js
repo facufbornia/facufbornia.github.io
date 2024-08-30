@@ -4,7 +4,7 @@ const esp = document.querySelector(".spanish");
 
 function changeLanguage(){
     eng.addEventListener("click", () =>{ 
-        window.location.replace("https://facufbornia.github.io//indexen.html")
+        window.location.replace("https://facufbornia.github.io/indexen.html")
     });
 
     esp.addEventListener("click", () =>{ 
