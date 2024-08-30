@@ -4,11 +4,11 @@ const esp = document.querySelector(".spanish");
 
 function changeLanguage(){
     eng.addEventListener("click", () =>{ 
-        window.location.replace("http://127.0.0.1:5500/indexen.html")
+        window.location.replace("https://facufbornia.github.io//indexen.html")
     });
 
     esp.addEventListener("click", () =>{ 
-        window.location.replace("http://127.0.0.1:5500/index.html")
+        window.location.replace("https://facufbornia.github.io/")
     });
 }
 
