@@ -48,9 +48,6 @@
     }
     .language p {
         font-size: 16px;
-        /* display: flex; */
-        /* align-items: center; */
-        /* gap: 6px; */
         margin: 2px 0;
         flex-direction: column;
     }
