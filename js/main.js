@@ -36,7 +36,6 @@ async function getLocation() {
                 };
                 lat = coords.lat;
                 lon = coords.lon;
-                console.log(lat, lon);
                 if ((lat !== -34.907) || (lon !== -56.186)) {
                     await getWeather(lat, lon);
                 }
@@ -48,13 +47,11 @@ async function getLocation() {
     } else {
         await getWeather(lat, lon);
     }
-    console.log(lat, lon);
 }
 
 async function getWeather(lat, lon) {
     const response = await fetch(API_URL + `lat=${lat}` + `&lon=${lon}` + `&${API_key}`);
     const data = await response.json()
-    console.log(data);
     const weatherArray = data.weather;
     const tempArray = data.main;
 
@@ -70,13 +67,8 @@ async function getWeather(lat, lon) {
     }
 
     let weatherEmoji = getWeatherIcon(weatherId)
-    console.log(city,
-        weather,
-        weatherDesc,
-        weatherId,
-        temp);
     
-    p_city.append(" " + city);
+    p_city.append(city);
     p_weather.append(weather + ": " + weatherDesc);
     p_temp.append(temp + "°C");
     span_icon.append(weatherEmoji)
@@ -104,5 +96,17 @@ function getWeatherIcon(weatherId){
     }
 }
 
+// Typewriter effect
+let typed = new Typed("#typed", {
+    strings: ["<i class='qualification0'>Data Analyst</i>",
+        "<i class='qualification'>Full stack Software Developer</i>"
+    ],
+    typeSpeed: 60,
+    backSpeed: 75,
+    startDelay: 300,
+    backDelay: 1500,
+    loop: true,
+    contentType: "html",
+});
 getLocation();
 changeLanguage();

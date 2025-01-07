@@ -1,3 +1,18 @@
+/*              TYPEWRITER              */
+.qualification{
+    font-weight: bold;
+    background: none;
+    font-size: 18px;
+}
+.qualification0{
+    color: #90ce9e;
+    font-size: 18px;
+}
+#typed, .typed-cursor{
+    font-size: 20px;
+    background: none;
+    border: none;
+}
 /*              CARROUSEL              */
 
 .badges{
